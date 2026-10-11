@@ -43,6 +43,37 @@ java VariableAndDataType
 
 My goal is to complete the assignments provided in the Apna College batch, practice consistently, revisit important concepts, and build a strong foundation in Java DSA.
 
+## Assignment Files
+
+1. VariableAndDataType.java
+2. OutputQuestions.java
+3. ConditionalQuestions.java
+4. LoopsQuestions.java
+5. FunctionsQuestions.java
+6. ArraysQuestions.java
+7. SortingQuestions.java
+8. TwoDArraysQuestions.java
+9. StringsQuestions.java
+10. BitManipulationQuestions.java
+11. OOPSQuestions.java
+12. RecursionQuestions.java
+13. DivideAndConquerQuestions.java
+14. TimeComplexityQuestions.java
+15. BacktrackingQuestions.java
+16. ArrayListQuestions.java
+17. LinkedListQuestions.java
+18. StackQuestions.java
+19. QueueQuestions.java
+20. GreedyQuestions.java
+21. BinaryTreeQuestions.java
+22. BSTQuestions.java
+23. HeapQuestions.java
+24. HashingQuestions.java
+25. TriesQuestions.java
+26. Graph1Questions.java
+27. Graph2Questions.java
+28. DPQuestions.java
+
 ## Notes
 
 - Compiled `.class` files are generated locally and should not be committed; see `.gitignore`.
