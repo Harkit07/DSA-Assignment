@@ -37,28 +37,21 @@ public class ConditionalQuestions {
             int day = sc.nextInt();
 
             switch (day) {
-                case 1:
+                case 1 ->
                     System.out.println("Sunday");
-                    break;
-                case 2:
+                case 2 ->
                     System.out.println("Monday");
-                    break;
-                case 3:
+                case 3 ->
                     System.out.println("Tuesday");
-                    break;
-                case 4:
+                case 4 ->
                     System.out.println("Wednesday");
-                    break;
-                case 5:
+                case 5 ->
                     System.out.println("Thursday");
-                    break;
-                case 6:
+                case 6 ->
                     System.out.println("Friday");
-                    break;
-                case 7:
+                case 7 ->
                     System.out.println("Saturday");
-                    break;
-                default:
+                default ->
                     System.out.println("Wrong Number");
             }
 
@@ -68,12 +61,23 @@ public class ConditionalQuestions {
             //   int y = (a > b) ? a : b;
             // Your answer:
             System.out.println("boolean x = false");
-            System.out.println("y =" + 63);
+            System.out.println("y = " + 63);
 
             // Q5. Write a Java program that takes a year from the user
             // and prints whether that year is a leap year or not.
             // Hint: divisible by 4? -> divisible by 100? -> divisible by 400?
             // TODO: write your code here
+            System.out.print("Enter a year : ");
+            int year = sc.nextInt();
+            if (year % 400 == 0) {
+                System.out.println("Leap Year");
+            } else if (year % 100 == 0) {
+                System.out.println("Not a Leap Year");
+            } else if (year % 4 == 0) {
+                System.out.println("Leap Year");
+            } else {
+                System.out.println("Not a Leap Year");
+            }
         }
     }
 }
