@@ -18,8 +18,9 @@ public class OutputQuestions {
         //     }
         // }
         //
-        // Your answer: 5 , 4
-        // (exp1: 2*5=10, 10/2=5 | exp2: 5/2=2 (int division), 2*2=4)
+        // Your answer:
+        System.out.println("5, 4");
+
         // ================= (ii) =================
         //
         // public class Test {
@@ -37,8 +38,9 @@ public class OutputQuestions {
         //     }
         // }
         //
-        // Your answer: Java
-        // (1st: y > z is false | 2nd: both true -> prints Java | 3rd: 250 < 200 is false)
+        // Your answer:
+        IO.println("Java");
+
         // ================= (iii) =================
         //
         // public class Test {
@@ -52,8 +54,9 @@ public class OutputQuestions {
         //     }
         // }
         //
-        // Your answer: 4 0 0
-        // (x = 4, y = 0, z = 2/(4+0) = 0 in int division)
+        // Your answer:
+        System.out.println(4 + " " + 0 + " " + 0);
+
         // ================= (iv) =================
         //
         // public class Test {
@@ -65,8 +68,9 @@ public class OutputQuestions {
         //     }
         // }
         //
-        // Your answer: 278
-        // (4/3 = 1, 1*43 = 43 | 9*(2+24) = 234 | (3+48)/(2+48) = 51/50 = 1 | 43+234+1 = 278)
+        // Your answer:
+        System.out.println("278");
+
         // ================= (v) =================
         //
         // public class Test {
@@ -80,8 +84,6 @@ public class OutputQuestions {
         // }
         //
         // Your answer:
-        // 20
-        // 20
-        // (exp1: 5*(2+2) = 20 | exp2: 50/5 + 50/5 = 10 + 10 = 20)
+        IO.println("20, 20");
     }
 }
