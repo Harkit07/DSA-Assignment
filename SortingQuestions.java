@@ -2,6 +2,71 @@
 
 public class SortingQuestions {
 
+    public static void printArr(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void bubbleSort(int arr[]) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] < arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    public static void selectionSort(int arr[]) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int maxPos = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[maxPos] < arr[j]) {
+                    maxPos = j;
+                }
+            }
+            int temp = arr[maxPos];
+            arr[maxPos] = arr[i];
+            arr[i] = temp;
+        }
+    }
+
+    public static void insertionSort(int arr[]) {
+        for (int i = 1; i < arr.length; i++) {
+            int curr = arr[i];
+            int prev = i - 1;
+            while (prev >= 0 && arr[prev] < curr) {
+                arr[prev + 1] = arr[prev];
+                prev--;
+            }
+            arr[prev + 1] = curr;
+        }
+    }
+
+    public static void countingSort(int arr[]) {
+        int largest = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            largest = Math.max(largest, arr[i]);
+        }
+
+        int count[] = new int[largest + 1];
+        for (int i = 0; i < arr.length; i++) {
+            count[arr[i]]++;
+        }
+        int j = 0;
+        for (int i = count.length - 1; i >= 0; i--) {
+            while (count[i] > 0) {
+                arr[j] = i;
+                j++;
+                count[i]--;
+            }
+        }
+    }
+
     public static void main(String[] args) {
 
         // BASIC SORTING QUESTIONS
@@ -15,11 +80,26 @@ public class SortingQuestions {
 
         // a. Bubble Sort
         // TODO: write your code here
+        int arr1[] = arr.clone();
+        bubbleSort(arr1);
+        printArr(arr1);
+
         // b. Selection Sort
         // TODO: write your code here
+        int arr2[] = arr.clone();
+        selectionSort(arr2);
+        printArr(arr2);
+
         // c. Insertion Sort
         // TODO: write your code here
+        int arr3[] = arr.clone();
+        insertionSort(arr3);
+        printArr(arr3);
+
         // d. Counting Sort
         // TODO: write your code here
+        int arr4[] = arr.clone();
+        countingSort(arr4);
+        printArr(arr4);
     }
 }
