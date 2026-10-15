@@ -79,25 +79,21 @@ public class SortingQuestions {
         int[] arr = {3, 6, 2, 1, 8, 7, 4, 5, 3, 1}; //Output -> [8, 7, 6, 5, 4, 3, 3, 2, 1, 1]
 
         // a. Bubble Sort
-        // TODO: write your code here
         int arr1[] = arr.clone();
         bubbleSort(arr1);
         printArr(arr1);
 
         // b. Selection Sort
-        // TODO: write your code here
         int arr2[] = arr.clone();
         selectionSort(arr2);
         printArr(arr2);
 
         // c. Insertion Sort
-        // TODO: write your code here
         int arr3[] = arr.clone();
         insertionSort(arr3);
         printArr(arr3);
 
         // d. Counting Sort
-        // TODO: write your code here
         int arr4[] = arr.clone();
         countingSort(arr4);
         printArr(arr4);
