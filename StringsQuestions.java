@@ -30,9 +30,7 @@ public class StringsQuestions {
             }
             map.put(ch, map.get(ch) - 1);
         }
-
         return true;
-
     }
 
     public static void main(String[] args) {
@@ -91,14 +89,13 @@ public class StringsQuestions {
                 //   - otherwise the string is added to the pool and its reference is returned
                 // Use: saves memory when many duplicate strings exist.
                 // Always compare strings with equals(), not ==.
-                String a = "hello";
-                String b = new String("hello");
-                String c = b.intern();
+                // String a = "hello";
+                // String b = new String("hello");
+                // String c = b.intern();
 
-                System.out.println(a == b);       // false (b is a separate heap object)
-                System.out.println(a == c);       // true  (c points to the pooled object)
-                System.out.println(a.equals(b));  // true  (contents are the same)
-
+                // System.out.println(a == b);       // false (b is a separate heap object)
+                // System.out.println(a == c);       // true  (c points to the pooled object)
+                // System.out.println(a.equals(b));  // true  (contents are the same)
                 // ---------- b. StringBuffer ----------
                 // String is immutable, so every change creates a new object.
                 // StringBuffer is a mutable sequence of characters (changed in place).
