@@ -10,7 +10,6 @@ public class VariableAndDataType {
             // Question 1
             // Input 3 numbers A, B, C and output their average.
             // Average of N numbers = sum of numbers / N
-            // TODO: write your code here
             System.out.print("Enter A : ");
             int a = sc.nextInt();
             System.out.print("Enter B : ");
@@ -22,7 +21,6 @@ public class VariableAndDataType {
             // Question 2
             // Input the side of a square and output its area.
             // Area of a square = side x side
-            // TODO: write your code here
             System.out.print("Enter side of square : ");
             int s = sc.nextInt();
             System.out.println("Area of square = " + (s * s));
@@ -31,7 +29,6 @@ public class VariableAndDataType {
             // Enter the cost of 3 items (float) - pencil, pen, eraser.
             // Output the total cost as a bill.3
             // Add-on: add 18% GST to the total.3
-            // TODO: write your code here
             System.out.print("Enter cost of pencil : ");
             float pencil = sc.nextFloat();
             System.out.print("Enter cost of pen : ");
