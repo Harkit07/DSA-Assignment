@@ -160,7 +160,6 @@ public class ArraysQuestions {
         // Constraints:
         //   1 <= nums.length <= 10^5
         //   -10^9 <= nums[i] <= 10^9
-        // TODO: write your code here
         int arr1[] = {1, 2, 3, 1};
         int arr2[] = {1, 2, 3, 4};
         int arr3[] = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
@@ -189,7 +188,6 @@ public class ArraysQuestions {
         //   All values of nums are unique.
         //   nums is an ascending array that is possibly rotated.
         //   -10^4 <= target <= 10^4
-        // TODO: write your code here
         int test1[] = {4, 5, 6, 7, 0, 1, 2};
         int key1 = 0;
         int test2[] = {4, 5, 6, 7, 0, 1, 2};
@@ -213,7 +211,6 @@ public class ArraysQuestions {
         // Constraints:
         //   1 <= prices.length <= 10^5
         //   0 <= prices[i] <= 10^4
-        // TODO: write your code here
         int prices1[] = {7, 1, 5, 3, 6, 4};
         int prices2[] = {7, 6, 4, 3, 1};
         System.out.println(stockProfit(prices1));
@@ -228,7 +225,6 @@ public class ArraysQuestions {
         //   n == height.length
         //   1 <= n <= 2 * 10^4
         //   0 <= height[i] <= 10^5
-        // TODO: write your code here
         int height1[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
         int height2[] = {4, 2, 0, 3, 2, 5};
         System.out.println(trapRainWater(height1));
@@ -243,7 +239,6 @@ public class ArraysQuestions {
         // Constraints:
         //   0 <= nums.length <= 3000
         //   -10^5 <= nums[i] <= 10^5
-        // TODO: write your code here
         int nums1[] = {-1, 0, 1, 2, -1, -4};
         int nums2[] = {};
         int nums3[] = {0};
