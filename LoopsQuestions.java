@@ -21,7 +21,6 @@ public class LoopsQuestions {
 
             // Q2. Write a program that reads a set of integers,
             // and then prints the sum of the even and odd integers.
-            // TODO: write your code here
             int odd = 0;
             int even = 0;
             System.out.print("Enter numbers : ");
@@ -40,7 +39,6 @@ public class LoopsQuestions {
             // Hint: factorial of n = n * (n-1) * (n-2) * ... * 1 and exists for positive numbers only.
             // 0! = 1, 1! = 1, 2! = 2, 3! = 6, 4! = 24 and so on.
             // Note: do not confuse factorial with the NOT EQUAL TO operator, they are not the same.
-            // TODO: write your code here
             System.out.print("Enter a fact num : ");
             int num = sc.nextInt();
             long fact = 1;
@@ -55,7 +53,6 @@ public class LoopsQuestions {
 
             // Q4. Write a program to print the multiplication table of a number N,
             // entered by the user.
-            // TODO: write your code here
             System.out.print("Enter a num for table : ");
             int t = sc.nextInt();
             for (int i = 1; i <= 10; i++) {
