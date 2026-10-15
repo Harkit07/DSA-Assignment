@@ -36,7 +36,6 @@ public class FunctionsQuestions {
         try (Scanner sc = new Scanner(System.in)) {
 
             // Q1. Write a Java method to compute the average of three numbers.
-            // TODO: write your code here
             System.out.print("Enter a : ");
             float a = sc.nextFloat();
             System.out.print("Enter b : ");
@@ -48,7 +47,6 @@ public class FunctionsQuestions {
             // Q2. Write a method named isEven that accepts an int argument.
             // The method should return true if the argument is even, or false otherwise.
             // Also write a program to test your method.
-            // TODO: write your code here
             System.out.print("Enter a number to check Even : ");
             int num = sc.nextInt();
             System.out.println(isEven(num));
@@ -58,7 +56,6 @@ public class FunctionsQuestions {
             // A number is called a palindrome if the number is equal to the reverse of the number.
             // e.g., 121 is a palindrome because the reverse of 121 is 121 itself.
             // 321 is not a palindrome because the reverse of 321 is 123, which is not equal to 321.
-            // TODO: write your code here
             System.out.print("Enter a number to check palindrome : ");
             int paldrome = sc.nextInt();
             System.out.println(isPalindrome(paldrome));
@@ -73,7 +70,6 @@ public class FunctionsQuestions {
             //   f. Math.abs()
             // Free reading resource: https://www.javatpoint.com/java-math
             // Please feel free to look for more resources/websites on your own.
-            // TODO: write your code here
             int x = 16;
             int y = 4;
             System.out.println("Minimum: " + Math.min(x, y));
@@ -89,7 +85,6 @@ public class FunctionsQuestions {
             //   b. Find the last digit of the number
             //   c. Add it to the sum
             //   d. Repeat a & b until the number becomes 0
-            // TODO: write your code here
             System.out.print("Enter a digit : ");
             int digit = sc.nextInt();
             System.out.println(sum(digit));
