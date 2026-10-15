@@ -38,7 +38,6 @@ public class StringsQuestions {
 
             // STRINGS QUESTIONS
             // Q1. Count how many times lowercase vowels occurred in a String entered by the user.
-            // TODO: write your code here
             System.out.print("Enter a String : ");
             String str = sc.nextLine();
             System.out.println(countLC(str));
@@ -70,7 +69,6 @@ public class StringsQuestions {
             // If two strings contain the same characters but in a different order,
             // they can be said to be anagrams. Consider "race" and "care".
             // The characters of "race" can be rearranged to form "care", and vice versa.
-            // TODO: write your code here
             String str1 = "race";
             String str2 = "care";
             System.out.println(isAnagram(str1, str2));
@@ -78,7 +76,6 @@ public class StringsQuestions {
             // Q5. Search and read about:
             //   a. intern() method in String
             //   b. StringBuffer
-            // TODO: write your code here (or your notes)
             {
                 // ---------- a. intern() ----------
                 // Java keeps a String Pool where string literals are stored.
