@@ -9,7 +9,6 @@ public class ConditionalQuestions {
 
             // Q1. Write a Java program to get a number from the user
             // and print whether it is positive or negative.
-            // TODO: write your code here
             System.out.print("Enter a number : ");
             int num = sc.nextInt();
             if (num < 0) {
@@ -23,7 +22,6 @@ public class ConditionalQuestions {
             // Q2. Finish the following code so that it prints "You have a fever"
             // if your temperature is above 100, and otherwise prints "You don't have a fever".
             double temp = 103.5;
-            // TODO: write your code here
             if (temp > 100) {
                 System.out.println("You have a fever");
             } else {
@@ -32,7 +30,6 @@ public class ConditionalQuestions {
 
             // Q3. Write a Java program to input week number (1-7)
             // and print the day of the week name using switch case.
-            // TODO: write your code here
             System.out.print("Write a number between 1 to 7 : ");
             int day = sc.nextInt();
 
@@ -66,7 +63,6 @@ public class ConditionalQuestions {
             // Q5. Write a Java program that takes a year from the user
             // and prints whether that year is a leap year or not.
             // Hint: divisible by 4? -> divisible by 100? -> divisible by 400?
-            // TODO: write your code here
             System.out.print("Enter a year : ");
             int year = sc.nextInt();
             if (year % 400 == 0) {
