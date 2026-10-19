@@ -81,8 +81,17 @@ public class RecursionQuestions {
         if (disk == 1) {
             return 1;
         }
-
         return 2 * countStep(disk - 1) + 1;
+    }
+
+    public static void towerOfHanoi(int n, char src, char helper, char dest) {
+        if (n == 1) {
+            System.out.println("Shift disk 1 from " + src + " to " + dest);
+            return;
+        }
+        towerOfHanoi(n - 1, src, dest, helper);   // n-1 disks: A -> B, using C
+        System.out.println("Shift disk " + n + " from " + src + " to " + dest); // largest: A -> C
+        towerOfHanoi(n - 1, helper, src, dest);   // n-1 disks: B -> C, using A
     }
 
     public static void main(String[] args) {
@@ -161,8 +170,11 @@ public class RecursionQuestions {
             //   - Shift the last disk from 'A' to 'C'.
             //   - Shift 'n-1' disks from 'B' to 'C', using A.
             // TODO: write your code here
-            System.out.println(countStep(2));
-            System.out.println(countStep(3));
+            towerOfHanoi(2, 'A', 'B', 'C');
+            System.out.println("Total steps: " + countStep(2)); // 3
+
+            towerOfHanoi(3, 'A', 'B', 'C');
+            System.out.println("Total steps: " + countStep(3)); // 7
         }
     }
 }
