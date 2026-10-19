@@ -1,6 +1,62 @@
-// File name: DivideAndConquerQuestions.java
 
+import java.util.HashMap;
+
+// File name: DivideAndConquerQuestions.java
 public class DivideAndConquerQuestions {
+
+    public static void printArr(String[] arr) {
+        for (String str : arr) {
+            System.out.print(str + " ");
+        }
+        System.out.println();
+    }
+
+    public static void mergeSort(String[] arr, int si, int ei) {
+        if (si >= ei) {
+            return;
+        }
+        int mid = si + (ei - si) / 2;
+        mergeSort(arr, si, mid);
+        mergeSort(arr, mid + 1, ei);
+        merge(arr, si, mid, ei);
+    }
+
+    public static void merge(String[] arr, int si, int mid, int ei) {
+        String[] temp = new String[ei - si + 1];
+        int i = si;
+        int j = mid + 1;
+        int k = 0;
+        while (i <= mid && j <= ei) {
+            if (arr[i].compareTo(arr[j]) < 0) {
+                temp[k++] = arr[i++];
+            } else {
+                temp[k++] = arr[j++];
+            }
+        }
+        while (i <= mid) {
+            temp[k++] = arr[i++];
+        }
+        while (j <= ei) {
+            temp[k++] = arr[j++];
+        }
+
+        for (i = si, k = 0; k < temp.length; i++, k++) {
+            arr[i] = temp[k];
+        }
+    }
+
+    public static int majorityEl(int arr[]) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : arr) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        for (int key : map.keySet()) {
+            if (map.get(key) > (arr.length / 2)) {
+                return key;
+            }
+        }
+        return -1;
+    }
 
     public static void main(String[] args) {
 
@@ -11,6 +67,8 @@ public class DivideAndConquerQuestions {
         // Sample Output 1 : arr = { "earth", "mars", "mercury", "sun" }
         String[] arr = {"sun", "earth", "mars", "mercury"};
         // TODO: write your code here
+        mergeSort(arr, 0, arr.length - 1);
+        printArr(arr);
 
         // Q2. (MEDIUM) Given an array nums of size n, return the majority element.
         // The majority element is the element that appears more than floor(n / 2) times.
@@ -22,6 +80,11 @@ public class DivideAndConquerQuestions {
         //   1 <= n <= 5 * 10^4
         //   -10^9 <= nums[i] <= 10^9
         // TODO: write your code here
+        int[] num1 = {3, 2, 3};
+        int[] num2 = {2, 2, 1, 1, 1, 2, 2};
+        System.out.println(majorityEl(num1));
+        System.out.println(majorityEl(num2));
+
         // Q3. (HARD) Given an array of integers, find the Inversion Count in the array.
         // Inversion Count: For an array, inversion count indicates how far (or close) the array
         // is from being sorted. If the array is already sorted then the inversion count is 0.
