@@ -18,6 +18,8 @@ public class TimeComplexityQuestions {
         //   C. O(n^2)
         //   D. O(n^2 Log n)
         // Your answer:
+        System.out.println("B");
+
         // b)
         //   for (int i = 0; i < n; i++)
         //       i *= k;
@@ -27,11 +29,15 @@ public class TimeComplexityQuestions {
         //   C. O(log_k n)  (= log n of base k)
         //   D. O(log_n k)  (= log k of base n)
         // Your answer:
+        System.out.println("C");
+
         // c) Algorithm A and B have a worst-case running time of O(n) and O(log n), respectively.
         //    Therefore, algorithm B always runs faster than algorithm A.
         //   A. True
         //   B. False
         // Your answer:
+        System.out.println("B");
+
         // d) Find the time & space complexity of the floorSqrt function in the following code
         //    to calculate the square root of a number:
         //   class SqrtNum {
@@ -51,6 +57,8 @@ public class TimeComplexityQuestions {
         //       }
         //   }
         // Your answer (time & space):
+        System.out.println("Time O(√x), Space O(1)");
+
         // e) Find the time & space complexity of the following code:
         //   int a = 0;
         //   for (int i = 0; i < n; ++i) {
@@ -59,5 +67,7 @@ public class TimeComplexityQuestions {
         //       }
         //   }
         // Your answer (time & space):
+        System.out.println("Time O(n²), Space O(1)");
+
     }
 }
